@@ -1,0 +1,93 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "d52e9edb-2dcf-47fb-a01b-6a93cb0d185d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Random List: [65, 24, 2, 69, 7, 59, 66, 43, 93, 86]\n",
+      "Even Numbers: [24, 2, 66, 86]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "\n",
+    "# Generate a random list of 10 numbers between 1 and 100\n",
+    "random_list = [random.randint(1, 100) for _ in range(10)]\n",
+    "\n",
+    "# Print the random list\n",
+    "print(\"Random List:\", random_list)\n",
+    "\n",
+    "# Find and print the even numbers\n",
+    "even_numbers = [num for num in random_list if num % 2 == 0]\n",
+    "print(\"Even Numbers:\", even_numbers)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "b72cc2cb-dbdb-405a-a5fe-9c75d9b05005",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original string in reverse order: gnimmargorP nohtyP dlroW olleH\n",
+      "String with reversed individual words: olleH dlroW nohtyP gnimmargorP\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Create a string\n",
+    "text = \"Hello World Python Programming\"\n",
+    "\n",
+    "# Print the string in reverse order\n",
+    "print(\"Original string in reverse order:\", text[::-1])\n",
+    "\n",
+    "# Reverse each individual word\n",
+    "words = text.split()  # Split the string into words\n",
+    "reversed_words = [word[::-1] for word in words]  # Reverse each word\n",
+    "reversed_string = ' '.join(reversed_words)  # Join the reversed words back into a string\n",
+    "\n",
+    "# Print the string with reversed words\n",
+    "print(\"String with reversed individual words:\", reversed_string)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4be226e0-cd49-43b9-87e4-6fe824f970e7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
